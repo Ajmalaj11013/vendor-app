@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/Ajmalaj11013/vendor-app/static/css/main.21ea5a6e.css",
-    "main.js": "/Ajmalaj11013/vendor-app/static/js/main.cc18cce5.js",
-    "static/js/453.ed3810f9.chunk.js": "/Ajmalaj11013/vendor-app/static/js/453.ed3810f9.chunk.js",
-    "index.html": "/Ajmalaj11013/vendor-app/index.html",
-    "main.21ea5a6e.css.map": "/Ajmalaj11013/vendor-app/static/css/main.21ea5a6e.css.map",
-    "main.cc18cce5.js.map": "/Ajmalaj11013/vendor-app/static/js/main.cc18cce5.js.map",
-    "453.ed3810f9.chunk.js.map": "/Ajmalaj11013/vendor-app/static/js/453.ed3810f9.chunk.js.map"
+    "main.css": "/vendor-app/static/css/main.21ea5a6e.css",
+    "main.js": "/vendor-app/static/js/main.65dfc56b.js",
+    "static/js/453.ed3810f9.chunk.js": "/vendor-app/static/js/453.ed3810f9.chunk.js",
+    "index.html": "/vendor-app/index.html",
+    "main.21ea5a6e.css.map": "/vendor-app/static/css/main.21ea5a6e.css.map",
+    "main.65dfc56b.js.map": "/vendor-app/static/js/main.65dfc56b.js.map",
+    "453.ed3810f9.chunk.js.map": "/vendor-app/static/js/453.ed3810f9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.21ea5a6e.css",
-    "static/js/main.cc18cce5.js"
+    "static/js/main.65dfc56b.js"
   ]
 }
