@@ -1,38 +1,82 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.app {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  height: 100vh;
+}
+
+.content {
+  flex: 1;
+  overflow-y: auto;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-around;
+  background-color: #333;
   color: white;
+  padding: 10px 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
 
-.App-link {
-  color: #61dafb;
+.footer a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.footer a.active {
+  background-color: #555;
 }
+
+.screen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 60px); /* Adjust this if footer height changes */
+  font-size: 24px;
+}
+/* src/components/Home.css */
+.home {
+  padding: 20px;
+}
+
+.card {
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  position: relative;
+}
+
+.card input {
+  display: block;
+  margin-bottom: 10px;
+  padding: 5px;
+  width: calc(100% - 12px);
+}
+
+.card button {
+  margin-right: 10px;
+}
+
+.add-button {
+  position: fixed;
+  bottom: 80px;
+  right: 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 15px 20px;
+  border-radius: 50%;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.add-button:hover {
+  background-color: #0056b3;
+}
+
+
