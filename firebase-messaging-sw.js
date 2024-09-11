@@ -18,7 +18,9 @@ const firebaseConfig = {
 };
 
 // Initialize Firebase
-const app = firebase.initializeApp(firebaseConfig);
+firebase.initializeApp(firebaseConfig);
+
+// Retrieve an instance of Firebase Messaging
 const messaging = firebase.messaging();
 
 // Handle background messages
@@ -28,7 +30,7 @@ messaging.onBackgroundMessage(function (payload) {
   const notificationTitle = payload.notification.title || 'Notification';
   const notificationOptions = {
     body: payload.notification.body || 'You have a new message.',
-    icon: '/logo192.png', // Path to your app icon
+    icon: '/vendor-app/logo192.png', // Path to your app icon
   };
 
   self.registration.showNotification(notificationTitle, notificationOptions);
