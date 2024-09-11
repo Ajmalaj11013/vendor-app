@@ -1,3 +1,21 @@
+/* src/index.css or src/App.css */
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+body {
+  background-color: white;
+  color: #333; /* Dark grey for contrast */
+  font-family: monospace;
+  margin: 0;
+  padding: 0;
+  background-color:#f8f4f4;
+  background-color: aliceblue;
+}
+
 .app {
   display: flex;
   flex-direction: column;
@@ -9,26 +27,40 @@
   overflow-y: auto;
 }
 
+/* src/components/Footer.css */
 .footer {
+  background-color: #1E3A5F;  /* Dark blue, same as part of header gradient */
+  color: white;
+  padding: 10px 0px;
+  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);  /* Drop shadow for the footer */
   display: flex;
   justify-content: space-around;
-  background-color: #333;
-  color: white;
-  padding: 10px 0;
+  align-items: center;
+  width: 100%;
   position: fixed;
   bottom: 0;
-  width: 100%;
+  font-family: monospace;
 }
 
 .footer a {
   color: white;
   text-decoration: none;
-  padding: 10px 20px;
-  border-radius: 5px;
+  font-size: 11px;
+  padding-left: 5px;
+  padding-right: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .footer a.active {
-  background-color: #555;
+  font-weight: bold;
+  text-decoration: underline;
+
+}
+
+.footer a:hover {
+  color: #e0e0e0;
 }
 
 .screen {
@@ -38,45 +70,88 @@
   height: calc(100vh - 60px); /* Adjust this if footer height changes */
   font-size: 24px;
 }
-/* src/components/Home.css */
-.home {
-  padding: 20px;
+.hidden {
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+  background-color: #fef9f9;
+}
+::placeholder {
+  color: #888; /* Change to your desired color */
+  opacity: 1; /* Default is 0.54 */
+  font-size: 13px; /* Example font size */
+  font-family: monospace;
+}
+/* Container to hold the Login and Signup forms side by side */
+.auth-container {
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items:center;
+  gap: 20px;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  max-width: 800px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.card {
-  border: 1px solid #ccc;
+/* Individual form styling */
+.auth-form {
+  background-color: #ffffff;
   padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 350px;
+}
+
+.auth-form h2 {
+  text-align: center;
   margin-bottom: 20px;
-  border-radius: 5px;
-  position: relative;
+  color: #333;
 }
 
-.card input {
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
   display: block;
-  margin-bottom: 10px;
-  padding: 5px;
-  width: calc(100% - 12px);
+  margin-bottom: 5px;
+  color: #555;
 }
 
-.card button {
-  margin-right: 10px;
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
 }
 
-.add-button {
-  position: fixed;
-  bottom: 80px;
-  right: 20px;
-  background-color: #007bff;
-  color: white;
+.submit-button {
+  width: 100%;
+  padding: 10px;
   border: none;
-  padding: 15px 20px;
-  border-radius: 50%;
-  font-size: 24px;
+  border-radius: 5px;
+  background-color: #28a745;
+  color: #fff;
+  font-size: 16px;
   cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-.add-button:hover {
-  background-color: #0056b3;
+.submit-button:hover {
+  background-color: #218838;
 }
 
-
+/* Ensure responsive design */
+@media (max-width: 768px) {
+  .auth-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.mono{
+  font-family: monospace;
+}

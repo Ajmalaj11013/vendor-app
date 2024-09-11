@@ -1,0 +1,85 @@
+/* Container for the entire statistics component */
+.statistics {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: white;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Tabs container */
+  .tabs {
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 2px solid #3498db;
+  }
+  
+  /* Individual tab button */
+  .tab {
+    flex: 1;
+    padding: 12px;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    color: #3498db;
+    text-align: center;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .tab.active {
+    background-color: #1e3a5f;
+    color: white;
+  }
+  
+  .tab:hover {
+    background-color: #1e3a5f;
+    color: white;
+  }
+  
+  /* Container for tab content */
+  .tab-content {
+    padding: 16px;
+  }
+  
+  /* Individual field within the tab content */
+  .field {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 12px;
+    padding: 0px;
+    padding-right: 0px;
+    background-color: #f9f9f9;
+    border-radius: 4px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+    color: white;
+    background-color:cornflowerblue;
+    font-family: monospace;
+    background-color: #1984d1;
+    color:cornflowerblue;
+    background-color: white;
+    font-weight:bolder;
+    color: black;
+  }
+  .span-style-f{
+   width: 80%; 
+   padding: 10px;
+  }
+  .span-style-l{
+    display: flex;
+    background-color: #e3dcdc;
+    width: 20%;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    background-color: cornflowerblue;
+    background-color:#1984d1;
+
+  }
+  .tab-pane{
+   
+    margin-top: 20px;
+  }
+  

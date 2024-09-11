@@ -1,0 +1,28 @@
+/* src/components/SearchBar.css */
+.search-bar {
+    display: flex;
+    align-items: center;
+    border: 2px solid rgb(255, 255, 255); /* Matches the lighter part of your header gradient */
+    border-radius: 8px;
+    padding: 6px 10px;
+    margin: 16px auto; /* Centers the search bar and adds vertical margin */
+    background-color: white;
+    width: 92%; /* Use percentage to fit within the screen */
+    max-width: 600px; /* Optional: Limit the maximum width for larger screens */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .search-bar input {
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 8px;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .search-bar .search-icon {
+    margin-left: 8px;
+  }
+  
+  

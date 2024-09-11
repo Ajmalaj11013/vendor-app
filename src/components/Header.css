@@ -1,0 +1,55 @@
+/* src/components/Header.css */
+.header {
+  background-color: white;
+  border-bottom: 2px solid #3498db; /* Add a bottom border to separate it */
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  font-family:cursive;
+}
+
+.header a {
+  color: #3498db; /* Link color matching your theme */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.header a:hover {
+  text-decoration: underline;
+}
+
+
+.header-content {
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+}
+
+.header-title {
+  font-size: 28px;
+  font-weight: bold;
+  margin: 0;
+
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+
+}
+
+.header-profile {
+  color: white;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+}
+
+.header-profile span {
+  margin-left: 5px;
+}
+
+.header-profile:hover {
+  color: #e0e0e0;
+}
+

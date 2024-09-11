@@ -1,0 +1,15 @@
+.h-booking {
+    padding: 10px;
+    padding-top: 0px;
+    margin-bottom: 60px;  /* Space for the footer */
+    background-color: white;
+    margin: 10px;
+    background-color: white;
+    border: 1px solid #e0e0e0; /* Light grey border */
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    display: flex;
+    flex-direction: column;
+    font-family: monospace;
+
+  }

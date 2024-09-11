@@ -1,0 +1,31 @@
+.total-booking{
+        background-color: white;
+        border: 1px solid #e0e0e0; /* Light grey border */
+        border-radius: 8px;
+        padding: 12px;
+        margin: 16px 0;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+        display: flex;
+        flex-direction: column;
+        font-family: monospace;
+        font-size: medium;
+      
+}
+.booking {
+    padding: 10px;
+    padding-top: 0px;
+    margin-bottom: 60px;  /* Space for the footer */
+
+  }
+
+  .detail-container {
+    background-color: white;
+    border: 1px solid #e0e0e0; /* Light grey border */
+    border-radius: 8px;
+    margin: 16px 0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    display: flex;
+    flex-direction: column;
+    font-family: monospace;
+  }
+  

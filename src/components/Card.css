@@ -1,13 +1,5 @@
 /* src/components/Card.css */
-.card {
-    border: 1px solid #ccc;
-    padding: 15px;
-    margin-bottom: 20px;
-    border-radius: 5px;
-    background-color: #fff;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  
+
   .field-group {
     display: flex;
     justify-content: space-between;
@@ -33,22 +25,64 @@
     display: flex;
     justify-content: flex-end;
   }
+
+  .card-details {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding-top: 10px;
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-Family: monospace;
+    color: black;
+    box-sizing: border-box;
+    background-color:white;
+  }
   
-  .button-group button {
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    margin-left: 10px;
+  .card-summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     cursor: pointer;
   }
   
-  .button-group button:first-child {
-    background-color: #007bff;
-    color: white;
+    .c-name {
+    font-weight: bold;
+    margin-right: 10px;
+    font-family: monospace;
+    white-space: pre;
+    margin-left:10px;
+    padding-top: 3px;
   }
   
-  .button-group button:last-child {
-    background-color: #dc3545;
+  .toggle-button {
+    background-color: #D69684;
+    background-color: #2980B9;
     color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: monospace;
+    font-weight: bold;
+    margin-right: 10px;
   }
+  
+  .card-extra-details {
+    margin-top: 10px;
+    padding: 10px;
+    border-top: 1px solid #ddd;
+    font-size: 12px;
+    font-weight: bold;
+    background-color: white;
+    color: black;
+    border-top:  1px dotted black;
+    border-bottom:  2px solid rgb(248, 246, 246);
+   
+  }
+  
+  .card-extra-details p {
+    margin: 5px 0;
+  }
+  
+  
   

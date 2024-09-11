@@ -1,0 +1,30 @@
+/* Base button style */
+.flat-button {
+    background: #3498DB;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  /* Button hover effect */
+  .flat-button:hover {
+    background: #2980B9;
+  }
+  
+  /* Button active effect */
+  .flat-button:active {
+    background: #1E3A5F;
+  }
+  
+  /* Button focus effect */
+  .flat-button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.5);
+  }
+  

@@ -1,0 +1,113 @@
+/* src/components/BookingDetails.css */
+.booking-details {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding-top: 10px;
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-Family: monospace;
+    color: white;
+    box-sizing: border-box;
+  }
+  
+  .booking-summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+    .name {
+    font-weight: bold;
+    margin-right: 10px;
+    font-family: monospace;
+    white-space: pre;
+    margin-left:10px;
+    padding-top: 3px;
+  }
+  
+  .toggle-button {
+    background-color: #D69684;
+    background-color: #2980B9;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: monospace;
+    font-weight: bold;
+    margin-right: 10px;
+  }
+  
+  .booking-extra-details {
+    margin-top: 10px;
+    padding: 10px;
+    border-top: 1px solid #ddd;
+    font-size: 12px;
+    font-weight: bold;
+    background-color: white;
+    color: black;
+    border-top:  1px solid black;
+    border-bottom:  2px solid rgb(248, 246, 246);
+    
+  }
+  
+  .booking-extra-details p {
+    margin: 5px 0;
+  }
+  .field-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+
+  .checkmark-icon {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+  }
+
+  /* Update the complete-button styles to match your theme */
+.complete-button {
+  color: white;
+  border: none;
+  padding: 6px;
+  border-radius: 4px;
+  font-size: 13px;
+  width: 40%; /* Fit to the width of the card */
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  margin-top: 13px; /* Space above the button */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background: rgb(132, 165, 214);
+  background-color: #1e73be;
+  font-family: monospace;
+}
+
+.complete-button:hover {
+  /* Slightly darker blue on hover */
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+.total-booking{
+  margin: 20px;
+}
+.center-button{
+  display: flex;
+  justify-content: center;
+  
+}
+.pad-bot{
+padding: 5px;
+}
+.dark-bg{
+  background: rgb(106, 132, 171);
+}
+.light-bg{
+  background: rgb(132, 165, 214);
+  border: 2px dotted #13db67;
+  color: black;
+  background-color: #d6eddf;
+  box-sizing: border-box;
+}
+

@@ -1,0 +1,58 @@
+.editable-fields {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    font-family: monospace;
+    margin-bottom: 60px;
+    margin-top: 10px;
+  }
+  
+  .field-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px 0;
+  }
+  
+  .field-text {
+    flex: 1;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .field-input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .edit-button {
+    padding: 10px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .edit-button:hover {
+    background-color: #2980b9;
+  }
+
+  .button-format{
+    background-color: white;
+    border: none;
+    margin: 10px;
+  }
+  .field-label{
+    white-space: pre;
+    background: #2980b9;
+    margin: 10px;
+    margin-left: 20px;
+    padding: 8px;
+    color: #fff;
+  }
+  

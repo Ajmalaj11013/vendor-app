@@ -1,17 +1,24 @@
 // src/components/Card.js
 import React, { useState } from 'react';
 import './Card.css';
+import OutlinedButton from './OutlinedButton';
+import { EditIcon,DeleteIcon,CancelIcon,SaveIcon} from './icons/Icon'
 
-const Card = ({ bike, onDelete, onUpdate }) => {
+const Card = ({ item, onDelete, onUpdate }) => {
   const [isEditing, setIsEditing] = useState(false);
-  const [formData, setFormData] = useState(bike);
+  const [formData, setFormData] = useState(item);
+  const [isDetailsVisible, setIsDetailsVisible] = useState(false);
+
+  const toggleDetailsVisibility = () => {
+    setIsDetailsVisible(!isDetailsVisible);
+  };
 
   const handleEdit = () => {
     setIsEditing(!isEditing);
   };
 
   const handleDelete = () => {
-    onDelete(bike.id);
+    onDelete(item.id);
   };
 
   const handleChange = (e) => {
@@ -25,12 +32,12 @@ const Card = ({ bike, onDelete, onUpdate }) => {
   };
 
   return (
-    <div className="card">
+    <div>
       {isEditing ? (
         <>
           <div className="field-group">
-            <input type="text" name="bike" value={formData.bike} onChange={handleChange} placeholder="Bike" />
-            <input type="text" name="bikeNo" value={formData.bikeNo} onChange={handleChange} placeholder="Bike No" />
+            <input type="text" name="itemName" value={formData.itemName} onChange={handleChange} placeholder="Item Name" />
+            <input type="text" name="itemNo" value={formData.itemNo} onChange={handleChange} placeholder="Item No" />
           </div>
           <div className="field-group">
             <input type="text" name="pricePerDay" value={formData.pricePerDay} onChange={handleChange} placeholder="Price/Day" />
@@ -41,28 +48,36 @@ const Card = ({ bike, onDelete, onUpdate }) => {
             <input type="text" name="location" value={formData.location} onChange={handleChange} placeholder="Location" />
           </div>
           <div className="button-group">
-            <button onClick={handleSave}>Save</button>
-            <button onClick={handleEdit}>Cancel</button>
+          <OutlinedButton onClick={handleSave} className="outlined-button " component={SaveIcon}/>
+          <OutlinedButton onClick={handleEdit} className="outlined-rbutton" component={CancelIcon}/>
           </div>
         </>
       ) : (
         <>
+      <div className={`${isDetailsVisible ? '' : 'pad-bot'} card-details`}>
+      <div className="card-summary" onClick={toggleDetailsVisibility}>
+        <span className="c-name">{item.itemName.padEnd(14,' ')} - #{item.itemNo} </span>
+        <button className="toggle-button">
+          {isDetailsVisible ? '^' : '>'}
+        </button>
+      </div>
+      {isDetailsVisible && (
+          <div className="card-extra-details">
           <div className="field-group">
-            <p><strong>Bike:</strong> {bike.bike}</p>
-            <p><strong>Bike No:</strong> {bike.bikeNo}</p>
+            <p><strong>Price/Day : {item.pricePerDay} ₹</strong></p>
+            <p><strong>Price/Add Km : {item.pricePerKm} ₹</strong></p>
           </div>
           <div className="field-group">
-            <p><strong>Price/Day:</strong> {bike.pricePerDay}</p>
-            <p><strong>Price/Add Km:</strong> {bike.pricePerKm}</p>
-          </div>
-          <div className="field-group">
-            <p><strong>Free Km/Day:</strong> {bike.freeKmPerDay}</p>
-            <p><strong>Location:</strong> {bike.location}</p>
+            <p><strong>Free Km/Day : {item.freeKmPerDay}</strong></p>
+            <p><strong>Location : {item.location}</strong></p>
           </div>
           <div className="button-group">
-            <button onClick={handleEdit}>Edit</button>
-            <button onClick={handleDelete}>Delete</button>
+            <OutlinedButton onClick={handleEdit} className="outlined-button" component={EditIcon}/>
+            <OutlinedButton onClick={handleDelete} className="outlined-rbutton" component={DeleteIcon}/>
           </div>
+          </div>
+      )}
+        </div>
         </>
       )}
     </div>

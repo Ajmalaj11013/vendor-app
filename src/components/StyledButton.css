@@ -1,0 +1,33 @@
+/* Base button style */
+.styled-button {
+    background: linear-gradient(90deg, #1E3A5F, #3498DB);
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s ease, transform 0.2s ease;
+  }
+  
+  /* Button hover effect */
+  .styled-button:hover {
+    background: linear-gradient(90deg, #3498DB, #1E3A5F);
+    transform: translateY(-2px);
+  }
+  
+  /* Button active effect */
+  .styled-button:active {
+    background: linear-gradient(90deg, #1E3A5F, #3498DB);
+    transform: translateY(1px);
+  }
+  
+  /* Button focus effect */
+  .styled-button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.5);
+  }
+  

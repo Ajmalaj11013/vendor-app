@@ -1,0 +1,45 @@
+/* Base button style */
+.outlined-button {
+    background: transparent;
+    border: 2px solid #3498DB;
+    color: white;
+    font-size: 13px;
+    font-weight: bold;
+    border-radius: 25px;
+    cursor: pointer;
+    margin: 5px;
+    transition: background 0.3s ease, color 0.3s ease;
+    font-family: monospace;
+    width: 80px;        
+    height: 30px;
+    text-align: center; 
+    vertical-align: middle;
+    transform: scale(0.7); 
+    transform-origin: center; 
+  }
+  
+  
+  
+  .outlined-rbutton {
+    background: rgb(118, 141, 154);
+    border: 2px solid rgb(118, 141, 154);
+    border: 2px solid white;
+    background: #3498DB;
+    color: white;
+    font-size: 13px;
+    font-weight: bold;
+    border-radius: 25px;
+    cursor: pointer;
+    margin: 5px;
+    transition: background 0.3s ease, color 0.3s ease;
+    font-family: monospace;
+    width: 80px;        
+    height: 30px;
+    text-align: center; 
+    vertical-align: middle;
+    transform: scale(0.7); 
+    transform-origin: center; 
+  }
+  
+  
+  
